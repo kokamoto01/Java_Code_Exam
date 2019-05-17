@@ -7,10 +7,10 @@ public class MySample{
 
 class MyClass{
     void testString(){
-        String s1 = "XYZ";
-        String s2 = "XYZ";
-        // String s1 = new String("XYZ");
-        // String s2 = new String("XYZ");
+        // String s1 = "XYZ";
+        // String s2 = "XYZ";
+        String s1 = new String("XYZ");
+        String s2 = new String("XYZ");
         if(s1.equals(s2)){
             System.out.println("Match!");
         }else{
