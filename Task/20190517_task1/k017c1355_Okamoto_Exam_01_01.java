@@ -10,7 +10,7 @@ public class k017c1355_Okamoto_Exam_01_01{
 /* 問題点：
 処理を分けすぎている。できるだけ処理は１つにまとめたほうが美しい。 */
 
-/* class LeapYear{
+/* class LeapYear01{
     boolean isLeapYear(int year){
         if (year % 4 == 0) {
             if ((year % 100) == 0) {
@@ -33,10 +33,12 @@ public class k017c1355_Okamoto_Exam_01_01{
 
 全く意味が違うのでこれが最善解だと考えた。
 */
-class LeapYear{
-    boolean isLeapYear(int year){
-        if((year % 4 == 0) || (!(year % 100 == 0)) || (year % 400 == 0)){
-            return true;
+class LeapYear02{
+    static boolean isLeapYear(int year){
+        // うるう年になる
+        if((year % 400 == 0) && (year % 4 == 0 && year % 100 != 0)){
+            return false;
+        // うるう年にはならない
         }else{
             return false;
         }
