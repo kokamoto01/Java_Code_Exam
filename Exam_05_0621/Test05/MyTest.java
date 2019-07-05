@@ -18,7 +18,7 @@ class MyThread implements Runnable{ //Threadクラスを継承
         MyThread(String message, long interval){ //コンストラクターでメッセージと
         this.message = message; //インターバル時間をメンバー変数に格納
         this.interval = interval;
-    }
+        }
     public void run(){ //run()メソッドをオーバーライド
         try {
             while (true){ //無限ループ
