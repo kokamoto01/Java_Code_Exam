@@ -1,0 +1,2 @@
+ooo.v-o ~~ をWiresharkでキャプチャ。
+GET　/favicon.ico HTT`/1.1\r\n をつくる。（HTTPヘッダを作る。）
